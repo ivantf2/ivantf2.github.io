@@ -44,20 +44,6 @@
             opacity: .6;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
         .tekstPrekoSlike {
             position: absolute;
             top: 50%;
@@ -84,6 +70,13 @@
             font-size: 3em;
             text-align: center;
         }
+        video {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Optional: Center the video horizontally */
+        object-fit: cover; /* or "contain" depending on your preference */
+    }
         /* prilagodbe za mobilne uređaje */
         @media (max-width: 767px) {
             .napravljenaSlika img {
@@ -155,9 +148,10 @@
     
     <p style="font-size: 1.2em;max-width: 670px; margin: 0 auto;padding: 10px;">Naša misija je stvoriti ugodan prostor gdje možete uživati u iznimnoj kavi, ukusnim poslasticama i nezaboravnim trenucima. Od pažljivo pripremljenih napitaka do tople atmosfere, svaki detalj osmišljen je kako bismo podigli vaše iskustvo s kavom na višu razinu.</p>
     
-    <div class="video-container" >
-        <iframe width="800" height="460" src="edit720p.mp4" frameborder="0" allowfullscreen></iframe>
-    </div>
+    <video width="1000" height="570" autoplay="false" controls>
+        <source src="edit720p.mp4" type="video/mp4">
+    </video>
+   
     
 </section>
 
