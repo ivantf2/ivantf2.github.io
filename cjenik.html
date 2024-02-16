@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> <!-- Font koji se koristi na stranici--> 
+    <title>Cjenik</title>
+    <style>
+    .navbar {
+            background-color: rgb(193, 164, 143) !important;
+            transition: background-color 0.3s ease;
+        }
+    .nav-link{
+            font-size: 1.1em;
+        }
+    .navbar.transparent {
+            background-color: rgba(216, 202, 192, 0.7) !important; 
+        }
+    body{
+        background-color: rgb(253, 225, 207) !important;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .contact-info {
+        background-color: #d2b6a1 !important; 
+        border-radius: 3%;
+        padding: 20px;
+    }
+
+    .page-header {
+        background-color: #403f3f;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+    .page-header nav ul li a {
+    background-color: #ccc;
+    padding: 7px; 
+    border-radius: 5px;
+    text-decoration: none; 
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+    .page-header nav ul li a:hover {
+        background-color: #a8a8a8;
+        padding: 8px;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 20px;
+        font-size: 1.1em;
+        color: rgb(255,255,255);
+    }
+
+    .menu-section {
+        margin: 20px 0;
+        padding: 15px;
+    }
+    .menu-section h2{
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    th, td {
+        border: 2px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #403f3f;
+        color: white;
+    }
+    /* prilagodbe za mobilne uredaje */
+    @media (max-width: 768px) {
+            .menu-section {
+                margin-top: 40px;
+            }
+
+            .page-header nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .page-header nav ul li {
+                margin: 10px 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+       <!-- Navigation Bar -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo2.svg" width="60" height="60" class="d-inline-block align-top" alt="Caffique Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Naslovnica</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="cjenik.html">Cjenik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Kontakt">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <div class="page-header">
+        <h1>Caffe Bar Cjenik</h1>
+        <nav>
+            <ul>
+                <li><a href="#topli-napitci">Topli Napitci</a></li>
+                <li><a href="#bezalkoholna-pica">Bezalkoholna Pića</a></li>
+                <li><a href="#alkoholna-pica">Alkoholna Pića</a></li>
+                <li><a href="#mijesana-pica">Miješana Pića</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <section id="topli-napitci" class="menu-section">
+                    <h2>Topli Napitci</h2>
+                    <table>
+                        <tr>
+                            <th>Napitak</th>
+                            <th>Cijena</th>
+                        </tr>
+                        <tr>
+                            <td>Kava salica</td>
+                            <td>1,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Kava za van</td>
+                            <td>1,20 €</td>
+                        </tr>
+                        <tr>
+                            <td>Kava s mlijekom</td>
+                            <td>1,20 €</td>
+                        </tr>
+                        <tr>
+                            <td>Kava sa slagom</td>
+                            <td>1,40 €</td>
+                        </tr>
+                        <tr>
+                            <td>Cappucino</td>
+                            <td>1,60 €</td>
+                        </tr>
+                        <tr>
+                            <td>Nescaffe</td>
+                            <td>1,20 €</td>
+                        </tr>
+                        <tr>
+                            <td>Vruca cokolada</td>
+                            <td>1,80 €</td>
+                        </tr>
+                        <tr>
+                            <td>Caj</td>
+                            <td>1,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Ledena kava</td>
+                            <td>1,60 €</td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section id="mijesana-pica" class="menu-section">
+                    <h2>Miješana Pića</h2>
+                    <table>
+                        <tr>
+                            <th>Napitak</th>
+                            <th>Cijena</th>
+                        </tr>
+                        <tr>
+                            <td>Štok Cola 0,13L</td>
+                            <td>2,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Rum Cola 0,13L</td>
+                            <td>2,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Jeger Cola 0,13L</td>
+                            <td>2,30 €</td>
+                        </tr>
+                        <tr>
+                            <td>Pelin Cola 0,13L</td>
+                            <td>2,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Sprite Votka 0,13L</td>
+                            <td>2,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Gin Tonik 0,13L</td>
+                            <td>2,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Jack Cola 0,13L</td>
+                            <td>2,70 €</td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <section id="bezalkoholna-pica" class="menu-section">
+                    <h2>Bezalkoholna Pića</h2>
+                    <table>
+                        <tr>
+                            <th>Napitak</th>
+                            <th>Cijena</th>
+                        </tr>
+                        <tr>
+                            <td>Coca-Cola 0.25L</td>
+                            <td>1,80 €</td>
+                        </tr>
+                        <tr>
+                            <td>Coca-Cola 1.00L</td>
+                            <td>9,50 €</td>
+                        </tr>
+                        <tr>
+                            <td>Fanta 0.25L</td>
+                            <td>1,80 €</td>
+                        </tr>
+                        <tr>
+                            <td>Sprite 0.25L</td>
+                            <td>1,80 €</td>
+                        </tr>
+                        <tr>
+                            <td>Schweppes 0.25L</td>
+                            <td>1,80 €</td>
+                        </tr>
+                        <tr>
+                            <td>Ledeni Caj 0.25L</td>
+                            <td>1,80 €</td>
+                        </tr>
+                        <tr>
+                            <td>Fanta 0.25L</td>
+                            <td>1,80 €</td>
+                        </tr>
+                        <tr>
+                            <td>Cedevita</td>
+                            <td>1,60 €</td>
+                        </tr>
+                        <tr>
+                            <td>Jamnica 0.10L</td>
+                            <td>0,30 €</td>
+                        </tr>
+                        <tr>
+                            <td>Jamnica 0.20L</td>
+                            <td>0,60 €</td>
+                        </tr>
+                        
+                    </table>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section id="alkoholna-pica" class="menu-section">
+                    <h2>Alkoholna Pića</h2>
+                    <table>
+                        <tr>
+                            <th>Napitak</th>
+                            <th>Cijena</th>
+                        </tr>
+                        <tr>
+                            <td>Amaro 0.03L</td>
+                            <td>1,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Pelinkovac 0.03L</td>
+                            <td>1,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Pelinkovac 0.05L</td>
+                            <td>1,50 €</td>
+                        </tr>
+                        <tr>
+                            <td>Kruskovac 0.03L</td>
+                            <td>1,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Rum 0.03L</td>
+                            <td>1,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Jack Daniel's 0.03L</td>
+                            <td>1,60 €</td>
+                        </tr>
+                        <tr>
+                            <td>Jagermeister 0.03L</td>
+                            <td>1,30 €</td>
+                        </tr>
+                        <tr>
+                            <td>Gin 0.03L</td>
+                            <td>1,00 €</td>
+                        </tr>
+                        <tr>
+                            <td>Štok 0.03L</td>
+                            <td>1,00 €</td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+        </div>
+
+    </div>
+
+
+        <!-- Kontakt sekcija -->
+    <section id="Kontakt" class="contact-info">
+        <div class="row">
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-3 ">
+                <h2>Kontaktirajte nas</h2>
+                <p><b>Adresa:</b>Ul. Braće Branchetta 17</p>
+                <p><b>Broj mobitela:</b>+385 91 914 0487 </p>
+                <p><b>Email: </b><a href="mailto:ivan.pribanic04@gmail.com">ivan.pribanic04@gmail.com</a></p>
+            </div>
+            <div class="col-md-3">
+                <!-- Google Maps Embed -->
+                <div style="overflow: hidden; max-width: 100%;max-height: 450px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89811.1194825053!2d14.430951938482762!3d45.296354964169375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4764a125dca721c7%3A0xc89f8782f2ff5e59!2sUl.%20Bra%C4%87e%20Branchetta%2017%2C%2051000%2C%20Rijeka!5e0!3m2!1sen!2shr!4v1708097132129!5m2!1sen!2shr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            <div class="col-md-3">
+
+            </div>
+    </section>
+    
+    <script>
+        // Glatki prijelaz prelaskom na odjeljak
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script>
+        // JavaScript za transparentnu nav traku kod scrollanja
+        document.addEventListener("DOMContentLoaded", function() {
+            window.addEventListener('scroll', function() {
+                var navbar = document.getElementById('navbar');
+                if (window.scrollY > 0) {
+                    navbar.classList.add('transparent');
+                } else {
+                    navbar.classList.remove('transparent');
+                }
+            });
+        });
+    </script>
+    <script>
+        // poravnavanje cjenika i navigacijske trake
+        document.addEventListener("DOMContentLoaded", function() {
+            var navbarHeight = document.getElementById('navbar').offsetHeight;
+            var pageHeader = document.querySelector('.page-header');
+            pageHeader.style.marginTop = navbarHeight + 'px';
+        });
+    </script>
+</html>
