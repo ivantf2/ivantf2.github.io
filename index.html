@@ -21,7 +21,7 @@
             background-color: rgba(216, 202, 192, 0.7) !important; 
         }
         body{
-            background-color: rgb(253, 225, 207);
+            background-color: #fde1cf;
             font-family: 'Roboto', sans-serif;
         }
         .contact-info {
@@ -76,7 +76,36 @@
         display: block;
         margin: 0 auto; /* Optional: Center the video horizontally */
         object-fit: cover; /* or "contain" depending on your preference */
-    }
+        }
+        #faqAccordion {
+            background-color: #a89181;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            background-color: #ead2b3;
+            border: none;
+            margin-bottom: 2px; /* odvojiti elemente accordiona */
+        }
+
+        .card-header {
+            background-color: #bfa799;
+        }
+
+        .card-body {
+            color: #000000;
+        }
+
+        .btn-link {
+            color: #FFFFFF;
+        }
+        .btn-link:hover{
+            color: #bebebe;
+            text-decoration: none;
+        }
         /* prilagodbe za mobilne uređaje */
         @media (max-width: 767px) {
             .napravljenaSlika img {
@@ -118,6 +147,9 @@
                     <a class="nav-link" href="cjenik.html">Cjenik</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#FAQ">FAQ</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#Kontakt">Kontakt</a>
                 </li>
             </ul>
@@ -155,6 +187,82 @@
     
 </section>
 
+<!-- FAQ sekcija (accordion)-->
+<section id="FAQ" class="container mt-5 text-center">
+    <h2>Često postavljena pitanja</h2>
+    
+    <div class="accordion" id="faqAccordion">
+        <!-- Pitanje 1 -->
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Pitanje 1: Što je Caffique?
+                    </button>
+                </h5>
+            </div>
+        
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                <div class="card-body">
+                    Caffique je mjesto gdje se ljubitelji kave okupljaju kako bi uživali u vrhunskim okusima i ugodnoj atmosferi. Naša strast je stvarati kulinarske čarolije od najkvalitetnijih kava i svježih sastojaka.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pitanje 2 -->
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Pitanje 2: Kako mogu kontaktirati Caffique?
+                    </button>
+                </h5>
+            </div>
+        
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                <div class="card-body">
+                    Kontaktirati nas možete putem naše adrese, broja mobitela ili e-maila. Sve kontakt informacije možete pronaći na dnu stranice u sekciji "Kontakt".
+                </div>
+            </div>
+        </div>
+        
+       <!-- Pitanje 3 -->
+       <div class="card">
+        <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Pitanje 3: Koje vrste kave nudite?
+                </button>
+            </h5>
+        </div>
+    
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+            <div class="card-body">
+                Nudimo širok spektar vrhunskih kava, uključujući espresso, cappuccino, americano, i mnoge druge. Naša ponuda redovito se ažurira kako bismo zadovoljili različite ukuse naših posjetitelja.
+            </div>
+        </div>
+    </div>
+    
+    <!-- Pitanje 4 -->
+    <div class="card">
+        <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Pitanje 4: Kako mogu rezervirati stol?
+                </button>
+            </h5>
+        </div>
+    
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+            <div class="card-body">
+                Rezervacije stolova moguće su putem telefona ili e-maila. Javite nam datum, vrijeme i broj osoba, i rado ćemo vam rezervirati stol prema raspoloživosti.
+            </div>
+        </div>
+    </div>
+
+        
+    </div>
+</section>
 
 
 
